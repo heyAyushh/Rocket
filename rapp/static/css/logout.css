@@ -1,0 +1,12 @@
+body{
+    background-image: url("kidsPic.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+#logout{
+	font-family: 'Pacifico';
+    text-align: center;
+	margin:10px 0px 0px 100px;
+	font-size: 30px;
+	/*background-color: white;*/
+}
