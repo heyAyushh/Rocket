@@ -1,0 +1,53 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remote Home</title>
+
+    <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Noto+Sans|Bellefair|Titillium+Web" rel="stylesheet">
+
+  <!--for icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- for ext. css file -->
+    <link rel="stylesheet" type="text/css" href="{% static '../static/css/adDevice.css' %}"/>
+
+</head>
+<body>
+  <div class="container-fluid">
+        <!-- body starts here -->
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-3 col-md-offset-2">
+                <div class="deviceBox">
+                    <div class="sub_heading">
+                        {{ Date }}
+                    </div>    
+                    <form method="post">
+                    {% csrf_token %}
+                        <div class="info">
+                            <input type="text" placeholder="Device name" name="deviceName" value="{{ deviceName }}">
+                        </div>
+                        <div class="info">
+                            <input type="submit" class="btn btn-default" value="Add a device">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

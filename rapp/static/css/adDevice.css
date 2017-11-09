@@ -1,0 +1,24 @@
+body{
+    background-image: url("bg.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.deviceBox{
+    background-color: white;
+    margin: 50px 30px 0 30px;
+    padding: 20px;
+    /*text-align: center;*/
+    border: 1px solid #ccc;
+    box-sizing: content-box;
+}
+.sub_heading{
+    padding: 0;
+    color: silver;
+    font-size: 20px;
+    font-family: 'Bellefair';
+}
+.info{
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Titillium Web';           
+}
