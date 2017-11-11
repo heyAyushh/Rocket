@@ -1,0 +1,6 @@
+{
+    "port": "/dev/cu.usbserial",
+    "board": "esp8266:esp8266:generic",
+    "configuration": "CpuFrequency=80,FlashFreq=40,FlashMode=dio,UploadSpeed=115200,FlashSize=512K64,ResetMethod=ck,Debug=Disabled,DebugLevel=None____",
+    "sketch": "Esp8266/flash_light.ino"
+}
