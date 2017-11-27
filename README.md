@@ -28,8 +28,13 @@ Setup a Startup script
 	 	 cp /home/pi/Rocket/runatstartup.conf /etc/init
         ```
  
-    
-# VOILA
-    
+
+
+   3. Run Command
+	``` node-red-start ```
+
+   4. Import flows form Rocket/flow 
+        
+### VOILA Start Hacking..
     
     
