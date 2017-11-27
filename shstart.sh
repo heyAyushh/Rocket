@@ -2,4 +2,4 @@
 
 sudo echo "RUNNING Startup SCRIPT" && date
 sudo date >> startlog.txt
-sudo node-red-start
+node-red-pi >> startlog.txt 
